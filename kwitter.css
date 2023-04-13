@@ -9,8 +9,12 @@ html,body{
 .logo{
     height: 150;
     width:150;
+    border-radius: 38px;
 }
 .login_div
 {
 	background: rgba(248, 75, 6, 0.8);float: none;border-radius: 15px;
+}
+#login_button{
+    border-radius: 38px;
 }
