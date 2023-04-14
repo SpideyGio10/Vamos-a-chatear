@@ -10,11 +10,11 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
 
     user_name=localStorage.getItem("user_name");
-    room_name=document.getElementById("room_name").value;
+    room_name=localStorage.getItem("room_name");
 
     function send(){
         msg=document.getElementById("msg").value;
-        firabase.database().ref(room_name).push({
+        firebase.database().ref(room_name).push({
             name:user_name,
             message:msg,
             like:0
